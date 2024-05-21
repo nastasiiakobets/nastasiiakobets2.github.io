@@ -403,26 +403,20 @@ footer p{
         border-radius: 1em;
     }
     .main{
-        font-size: 23px;
+        font-size: 21px;
         margin-top: 30%;
         margin-left: 5%;
-    }
-    .section{
-        height: auto;
+        margin-bottom: 60%;
     }
     .foto{
         display: block;
         align-items: center;
+        width: auto;
     }
     .foto img{
-        wight: auto;
-        margin: 5%;
-    }
-    .wheel{
-        height: 30%;
-    }
-    .palette{
-        height: 40%;
+        margin-left: 5%;
+        height: 210px;
+        align-items: center;
     }
     .text{
         font-size: 21px;
@@ -431,9 +425,9 @@ footer p{
         font-size: 22px;
     }
     .text img{
-        height: 20%;
-        wight: auto;
-        margin-right: 5%;
+        height: 205px;
+        width: auto;
+        margin-left: 5%;
     }
     .hr-main{/*полосочка*/
         width: 40%;
@@ -446,7 +440,7 @@ footer p{
         margin-left: 1em;
     }
     .hr-bottom{
-       border: 0.7px solid var(--text-color1);
+        border: 0.7px solid var(--text-color1);
         width: 21em;
         margin-top: 0;
     }
