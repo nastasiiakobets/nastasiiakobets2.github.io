@@ -414,9 +414,10 @@ footer p{
     }
     .foto img{
         margin-left: 5%;
+        wight: auto;
     }
     .wheel{
-        height: 300px;
+        height: 450px;
     }
     .palette{
         height: 200px;
@@ -429,6 +430,7 @@ footer p{
     }
     .text img{
         height: 200px;
+        wight: auto;
     }
     .hr-main{/*полосочка*/
         width: 40%;
