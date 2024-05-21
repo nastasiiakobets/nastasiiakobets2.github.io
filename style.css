@@ -406,7 +406,7 @@ footer p{
         font-size: 23px;
         margin-top: 30%;
         margin-left: 5%;
-        margin-bottom: 60%;
+        margin-bottom: 100%;
     }
     .foto{
         display: block;
@@ -417,10 +417,10 @@ footer p{
         wight: auto;
     }
     .wheel{
-        height: 400px;
+        height: 350px;
     }
     .palette{
-        height: 200px;
+        height: 150px;
     }
     .text{
         font-size: 21px;
@@ -429,14 +429,14 @@ footer p{
         font-size: 22px;
     }
     .text img{
-        height: 300px;
+        height: 250px;
         wight: auto;
     }
     .hr-main{/*полосочка*/
         width: 40%;
         border: 1px solid var(--header);
-        margin-top: -35%;
-        margin-bottom: 150%;
+        margin-top: -55%;
+        margin-bottom: 200%;
         margin-left: 30%;
     }
     .dark-th:last-of-type a{
