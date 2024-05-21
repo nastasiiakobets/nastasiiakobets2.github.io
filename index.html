@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kobets Anastasiia</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="dark-th">
+        <section>
+           <header>
+            <ul class="nav-list">
+                <li>
+                    <a class="nav-list-link" href="#section1">Гама</a>
+                </li>
+                <li>
+                    <a class="nav-list-link" href="#section2">Значення</a>
+                </li>
+                <li>
+                    <a class="nav-list-link" href="#section3">Приклади</a>
+                </li>
+                <li>
+                    <a class="nav-list-link" href="#section4">Чому</a>
+                </li>
+                <li>
+                    <label class="switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+            </ul>
+            <a class="logo-link" href="">
+                <img id="icon" class="logo-img" src="images/icon.png" alt="icon">
+            </a>
+            <div class="nav-toggle" onclick="toggleNav()">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="burger-icon"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg>
+            </div>
+           </header>
+           <div class="overlay" id="overlay" onclick="closeNav()"></div>
+           <main>
+            <div class="main">
+                <p>Мене звати <b>Анастасія</b>,</p> 
+                <p>І це моя курсова робота на тему:</p>
+                <p><b>"АНАЛІЗ ТА ОПТИМІЗАЦІЯ ВИКОРИСТАННЯ КОЛЬОРІВ У ВЕБ-ДИЗАЙНІ"</b></p>
+            </div>
+            <hr class="hr-main">
+           </main>   
+           <div id="wave" class="wave wave1"></div>
+           <div id="wave" class="wave wave2"></div>
+           <div id="wave" class="wave wave3"></div>
+           <div id="wave" class="wave wave4"></div>
+        </section>
+        <div class="foto">
+           <img id="wheel" src="images/wheelgood.png">
+           <img id="palette" src="images/palettegood.jpg">
+        </div>
+        <div id="text" class="text">
+            <h1 id="section1"><b>Що було використано:</b></h1>
+            <p><b>Монохроматична колірна схема</b>, що складається з різних тонів, відтінків і насиченості одного основного кольору. Вони дуже згуртовані, але ризикують стати одноманітними.</p>
+            <h1 id="section2"><b>Значення кольорів:</b></h1>
+            <p><b>Синій</b> - довіра, спокій, безпека, впевненість, відповідальність, надійність, авторитет, комфорт, розслаблення.
+                Синій колір може зміцнити лояльність клієнтів і дати їм відчуття, що вони можуть задуматися і не поспішати під час покупок. 
+                Викликає відчуття безпеки та довіри до бренду. У дітей асоціюється з дорослішанням
+            </p>
+            <p><b>Фіолетовий</b> - креативність, багатство, витонченість, вишуканість, таємничість, духовність, розкіш, натхненність. Історично асоціюється з досконалістю, багатством, престижем. 
+               Темні відтінки фіолетового заспокоюють, а світлі - відображають відчуття весни та романтики. Популярний серед креативних та оригінальних брендів, сервісів
+            </p>
+            <h1 id="section3"><b>Приклади використання:</b></h1>
+            <p>Завдяки культу Діви Марії синій стає символом жіночності й чистоти.
+                А завдяки королю Філіппу Августу став модним у державній символіці. Він почав носити синє вбрання замість червоного і змінив прапор Франції. Так синій поступово став кольором політичного мейнстріму. Зараз він об’єднує весь світ: прапор Євросоюзу, Ліга Націй, ЮНЕСКО, ООН, НАТО. 
+                Також він став символом рівних прав завдяки джинсам, які стали “уніформою”. Джинси — це перший одяг, який однаково вільно носили чоловіки та жінки.</p>
+            <p>Синій використано в брендингу гігантської кількості IT-компаній: Microsoft, Intel, Facebook, Linkedin. Також синій обирають PayPal, Ford, Nivea, Dove</p>
+            <img id='examp' src="images/examp1.jpg" alt="example">
+            <h1 id="section4"><b>Чому:</b></h1>
+            <p>Бренди переважно віддають перевагу монохромним рішенням: понад 90% великих компаній обмежуються одним або двома кольорами. Синій — найпопулярніший колір, наявний у брендингу 33% компаній. </p>
+            <p>Тілбурзський університет (Нідерланди) заявив, що картини, на яких переважають сині тони, йдуть з аукціонів на 11% дорожче за інші картини. Отже, синій є найбільш продаваним кольором. </p>
+            <p>Дослідження Джо Хеллока про гендерні та колірні переваги виявило, що багато вікових груп віддають перевагу фіолетовому </p>
+        </div>
+        <footer>
+            <hr class="hr-bottom">
+            <div class="bottom1">
+                <img id="c" src="images/c2.png" alt="c">
+                <p>2024</p>
+            </div>
+        </footer>
+        <div id="topButton" onclick="scrollToTop()">
+            <img id="striloczka" src="images/down-arrow.png" alt="top">
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,462 @@
+@import url("fonts/stylesheet.css");
+:root {
+    --background-color: rgb(0, 0, 102);
+    --top-background-color: #AAAAFF;
+    --header: #3E3EBB;
+    --text-color1: #ffffff;
+    --text-color2: #D4D4FF;
+    --red: rgb(245, 251, 139);
+    --wave-image: url('images/waveblue.png');
+}
+*{
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    background-color: var(--background-color);
+}
+a{
+    color: inherit;/*прибираємо фіолетовий колір посилань*/
+    text-decoration: none; /*cкасовуємо підкреслення у посилань*/
+}
+
+ul{
+    list-style-type: none;/*без крапочок*/
+    margin: 0;
+}
+/*кнопка*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color:var(--red) ;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px --background-color;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+/*------------------------------------*/
+header {
+    background-color: var(--header);
+    border-radius: 0 0 0 56px;
+    margin-left: 500px; 
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.burger-icon {
+    font-size: inherit;
+    height: 1em;
+    vertical-align: -.125em;
+    margin-right: 13px;
+}
+
+.nav-list li{
+    color: var(--text-color1);
+    font-size: 23px;
+    padding: 0 30px 0 25px;
+    margin-left: 15px;
+}
+
+.nav-list li:first-child { /*відступ*/
+    margin-left: 100px;
+}
+.nav-list-link{
+    position: relative;
+}
+.nav-list-link:hover{/*зміна кольору при наведенні*/
+    color: var(--top-background-color);
+    transition: all .25s ease;
+}
+
+.nav-list-link::after{/*псевдоклас для полосочок знизу*/
+    content: "";
+    background: var(--top-background-color);
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .25s ease;
+}
+.nav-list-link:hover::after{
+    transform: scaleX(1);
+}
+.logo-link{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.logo-img{
+    width: 2.5em;
+    height: 2.5em;
+    background-color: var(--text-color2);
+    border-radius: 30px;
+    transition: all .25s ease;
+    margin-right: 50px;
+}
+
+.dark-th:last-of-type a :hover{ /*зміна кольору іконки*/
+   background-color: var(--top-background-color);
+   border-radius: 30px;
+}
+/*------------------------------------*/
+.main{
+    font-size: 36px;
+    margin-top: 250px;
+    margin-left: 5%;
+    margin-bottom: 335px;
+    color: var(--text-color1);
+}
+.main p{
+    margin: 3px;
+}
+
+.hr-main{/*полосочка*/
+    width: 400px;
+    border: 1.5px solid var(--header);
+    margin-top: -300px;
+    margin-bottom: 240px;
+    margin-left: 220px;
+}
+section
+{
+    width: 100%;
+    height: 100vh; 
+    background: var(--top-background-color); 
+}
+section .wave{
+    position: absolute;
+    bottom: 0;
+    Left: 0;
+    width: 100%; 
+    height: 100px;
+    background: var(--wave-image); 
+    background-size: 1000px 100px;
+}
+section .wave.wave1
+{
+    animation: animate1 30s linear infinite;
+    z-index: 1000; 
+    opacity: 1; 
+    animation-deLay: 0s;
+    bottom: 0;
+}
+section .wave.wave2
+{
+    animation: animate2 15s linear infinite;
+    z-index: 999; 
+    opacity: 0.5; 
+    animation-deLay: -5s;
+    bottom: 10px;
+}
+section .wave.wave3
+{
+    animation: animate1 15s linear infinite;
+    z-index: 998; 
+    opacity: 0.2; 
+    animation-deLay: -2s;
+    bottom: 15;
+}
+section .wave.wave4
+{
+    animation: animate2 15s linear infinite;
+    z-index: 997; 
+    opacity: 0.2; 
+    animation-deLay: -2s;
+    bottom: 5px;
+}
+@keyframes animate1
+{ 
+    0%
+    {
+        background-position-x:0;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate2
+{ 
+    0%
+    {
+        background-position-x:0;
+    }
+    100%
+    {
+        background-position-x: -1000px;
+    }
+}
+/*------------------------------------*/
+.foto {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+.foto img {
+    max-width: 100%; 
+    height: 400px;
+    margin: 5px; 
+    margin-left: 120px;
+}
+.wheel{
+    margin-left: 250px;
+}
+.palette{
+    margin-left: 100px;
+}
+
+.text{
+    font-size: 26px;
+    margin-top: 40px;
+    margin-left:5%; margin-right: 5%;
+    margin-bottom: 200px;
+    color: var(--text-color2);
+}
+.text h1{
+    color: var(--text-color1);
+    font-size: 30px;
+}
+.text img{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+}
+
+/*-----------------подвал-------------------*/
+.hr-bottom{
+    border: 1.5px solid var(--text-color2);
+    width: 1300px;
+    margin-top: 0;
+}
+.bottom1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer img{
+    width: 15px;
+}
+footer p{
+    text-align: right;
+    margin-right: 100px;
+    font-weight: 450;
+    color: var(--text-color2);
+}
+#topButton {
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    background-color: var(--top-background-color);
+    color: var(--red);
+    padding: 10px;
+    border:0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#topButton img{
+    width: 25px;
+    height: 20px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+.nav-list.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    background-color: var(--top-background-color);
+    z-index: 4;
+}
+
+.nav-list.open li {
+    margin: 20px 0;
+}
+
+/*------------------ media queries ------------------*/
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 992px) {
+    body{
+        background-size: 200%; 
+        background-position: center top; 
+    }
+    body.alternative-images {
+        background-size: 200%; 
+        background-position: center top; 
+    }
+    body.main-images{
+        background-size: 200%; 
+        background-position: center top; 
+    }
+    .main, .text{
+        margin-right: 5%;
+    }
+
+    .nav-list{
+        display: none;
+    }
+    header{
+        border-radius: 0 0 0 2.5em;
+        margin-left: 200px;
+        height: 60px;
+    }
+    .nav-toggle{
+        display: block;
+    }
+    .nav-list li{
+        font-size: 16px;
+        margin-left: 0;
+    }
+    #topButton {
+        border-radius: 1em;
+    }
+    .main{
+        font-size: 21px;
+        margin-top: 30%;
+        margin-left: 5%;
+        margin-bottom: 60%;
+    }
+    .foto{
+        display: block;
+        align-items: center;
+    }
+    .foto img{
+        height: 20em;
+        margin-left: 5%;
+    }
+    .hr-main{/*полосочка*/
+        width: 40%;
+        border: 1px solid var(--dark);
+        margin-top: -15em;
+        margin-bottom: 60%;
+        margin-left: 50%;
+    }
+    .dark-th:last-of-type a{
+        margin-left: 1em;
+    }
+
+
+    .hr-bottom{
+       border: 0.7px solid var(--text-color1);
+        width: 21em;
+        margin-top: 0;
+    }
+    .bottom1{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    footer img{
+        width: 0.7em;
+    }
+    footer p{
+        text-align: right;
+        margin-right: 5em;
+        font-weight: 450;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+   
+}
+
+/*інша тема*/
+body.dark-theme {
+    --wave-image: url('images/wavered.png');
+}
+
+body.dark-theme .wave {
+    background: var(--wave-image);
+}
