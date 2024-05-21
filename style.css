@@ -413,8 +413,13 @@ footer p{
         align-items: center;
     }
     .foto img{
-        height: 200px;
         margin-left: 5%;
+    }
+    .wheel{
+        height: 300px;
+    }
+    .palette{
+        height: 200px;
     }
     .text{
         font-size: 21px;
@@ -428,7 +433,7 @@ footer p{
     .hr-main{/*полосочка*/
         width: 40%;
         border: 1px solid var(--header);
-        margin-top: 1%;
+        margin-top: -15%;
         margin-bottom: 60%;
         margin-left: 30%;
     }
