@@ -432,7 +432,7 @@ footer p{
     .hr-main{/*полосочка*/
         width: 40%;
         border: 1px solid var(--header);
-        margin-top: -75%;
+        margin-top: -55%;
         margin-bottom: 200%;
         margin-left: 30%;
     }
