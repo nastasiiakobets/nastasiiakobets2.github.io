@@ -208,7 +208,7 @@ section .wave{
 section .wave.wave1
 {
     animation: animate1 30s linear infinite;
-    z-index: 1000; 
+    z-index: 4; 
     opacity: 1; 
     animation-deLay: 0s;
     bottom: 0;
@@ -216,7 +216,7 @@ section .wave.wave1
 section .wave.wave2
 {
     animation: animate2 15s linear infinite;
-    z-index: 999; 
+    z-index: 3; 
     opacity: 0.5; 
     animation-deLay: -5s;
     bottom: 10px;
@@ -224,7 +224,7 @@ section .wave.wave2
 section .wave.wave3
 {
     animation: animate1 15s linear infinite;
-    z-index: 998; 
+    z-index: 2; 
     opacity: 0.2; 
     animation-deLay: -2s;
     bottom: 15;
@@ -232,7 +232,7 @@ section .wave.wave3
 section .wave.wave4
 {
     animation: animate2 15s linear infinite;
-    z-index: 997; 
+    z-index: 1; 
     opacity: 0.2; 
     animation-deLay: -2s;
     bottom: 5px;
@@ -341,7 +341,7 @@ footer p{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 3;
+    z-index: 5;
 }
 
 .nav-list.open {
@@ -355,7 +355,7 @@ footer p{
     bottom: 0;
     width: 70%;
     background-color: var(--header);
-    z-index: 4;
+    z-index: 6;
 }
 
 .nav-list.open li {
