@@ -414,6 +414,7 @@ footer p{
     }
     .foto img{
         margin-left: 5%;
+        margin-right: 5%;
         wight: auto;
     }
     .wheel{
@@ -431,6 +432,7 @@ footer p{
     .text img{
         height: 250px;
         wight: auto;
+        margin-right: 5%;
     }
     .hr-main{/*полосочка*/
         width: 40%;
