@@ -267,7 +267,7 @@ section .wave.wave4
 }
 .foto img {
     max-width: 100%; 
-    height: 400px;
+    height: auto;
     margin: 5px; 
     margin-left: 120px;
 }
@@ -293,6 +293,7 @@ section .wave.wave4
     display: block;
     margin: 0 auto;
     width: 500px;
+    height: auto;
 }
 
 /*-----------------подвал-------------------*/
@@ -412,14 +413,17 @@ footer p{
         align-items: center;
     }
     .foto img{
-        height: 100px;
+        height: 200px;
         margin-left: 5%;
     }
     .text{
         font-size: 21px;
     }
+    .text h1{
+        font-size: 22px;
+    }
     .text img{
-        height: 80px;
+        height: 200px;
     }
     .hr-main{/*полосочка*/
         width: 40%;
@@ -431,8 +435,6 @@ footer p{
     .dark-th:last-of-type a{
         margin-left: 1em;
     }
-
-
     .hr-bottom{
        border: 0.7px solid var(--text-color1);
         width: 21em;
