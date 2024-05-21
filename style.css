@@ -407,6 +407,9 @@ footer p{
         margin-top: 30%;
         margin-left: 5%;
     }
+    .section{
+        height: 80vh;
+    }
     .foto{
         display: block;
         align-items: center;
@@ -417,10 +420,10 @@ footer p{
         wight: auto;
     }
     .wheel{
-        height: 60%;
+        height: 30%;
     }
     .palette{
-        height: 60%;
+        height: 40%;
     }
     .text{
         font-size: 21px;
@@ -429,7 +432,7 @@ footer p{
         font-size: 22px;
     }
     .text img{
-        height: 50%;
+        height: 20%;
         wight: auto;
         margin-right: 5%;
     }
