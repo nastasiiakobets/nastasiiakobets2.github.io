@@ -406,7 +406,12 @@ footer p{
         font-size: 23px;
         margin-top: 30%;
         margin-left: 5%;
-        margin-bottom: 100%;
+    }
+    section .wave{
+        height: 50px;
+    }
+    section{
+        height: 100%;
     }
     .foto{
         display: block;
@@ -437,8 +442,8 @@ footer p{
     .hr-main{/*полосочка*/
         width: 40%;
         border: 1px solid var(--header);
-        margin-top: -55%;
-        margin-bottom: 200%;
+        margin-top: -75%;
+        margin-bottom: 220%;
         margin-left: 30%;
     }
     .dark-th:last-of-type a{
