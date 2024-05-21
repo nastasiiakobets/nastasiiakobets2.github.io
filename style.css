@@ -408,7 +408,7 @@ footer p{
         margin-left: 5%;
     }
     .section{
-        height: 80vh;
+        height: auto;
     }
     .foto{
         display: block;
@@ -416,6 +416,7 @@ footer p{
     }
     .foto img{
         wight: auto;
+        margin: 5%;
     }
     .wheel{
         height: 30%;
