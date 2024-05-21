@@ -267,7 +267,7 @@ section .wave.wave4
 }
 .foto img {
     max-width: 100%; 
-    height: auto;
+    height: 400px;
     margin: 5px; 
     margin-left: 120px;
 }
