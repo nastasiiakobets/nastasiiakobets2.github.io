@@ -407,12 +407,6 @@ footer p{
         margin-top: 30%;
         margin-left: 5%;
     }
-    section .wave{
-        height: 50px;
-    }
-    section{
-        height: 100%;
-    }
     .foto{
         display: block;
         align-items: center;
@@ -423,10 +417,10 @@ footer p{
         wight: auto;
     }
     .wheel{
-        height: 350px;
+        height: 60%;
     }
     .palette{
-        height: 150px;
+        height: 60%;
     }
     .text{
         font-size: 21px;
@@ -435,7 +429,7 @@ footer p{
         font-size: 22px;
     }
     .text img{
-        height: 250px;
+        height: 50%;
         wight: auto;
         margin-right: 5%;
     }
@@ -443,7 +437,7 @@ footer p{
         width: 40%;
         border: 1px solid var(--header);
         margin-top: -75%;
-        margin-bottom: 220%;
+        margin-bottom: 200%;
         margin-left: 30%;
     }
     .dark-th:last-of-type a{
