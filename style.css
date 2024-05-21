@@ -428,9 +428,9 @@ footer p{
     .hr-main{/*полосочка*/
         width: 40%;
         border: 1px solid var(--header);
-        margin-top: 15%;
+        margin-top: 1%;
         margin-bottom: 60%;
-        margin-left: 50%;
+        margin-left: 30%;
     }
     .dark-th:last-of-type a{
         margin-left: 1em;
